@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComponentsModule } from '../../components/components.module';
 
-interface Componente{
-  icon: string,
-  name: string,
- redirectTo: string
-}
 
 interface Superhero{
   id: string,
@@ -41,21 +36,12 @@ export class InicioPage implements OnInit {
     }
 
   ]
+  
+  
+      
+ 
 
-  componentes: Componente[] = [
-    {
-      icon: 'american-football-outline',
-      name: 'Action Sheet',
-      redirectTo: '/action-sheet'
    
-    },
-    {
-      icon: 'logo-apple-appstore',
-      name: 'Alert',
-      redirectTo:'/alert'
-    }
-    
-  ]
   constructor() { }
 
   ngOnInit() {
